@@ -1,4 +1,4 @@
-<h1 align="center">SokobAnt</i></h1>
+<div align="center"><img height="50%" width="50%" style="image-rendering: pixelated;" src="./assets/cover-image.png"></div>
 <p align="center">A puzzle game based on the classic Sokoban</p>
 
 <hr>
