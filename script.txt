@@ -1,0 +1,167 @@
+title SokobAnt
+author H3nry D1az
+homepage https://h3nry-d1az.itch.io/sokobant
+
+background_color #1B1B1B
+text_color #dadcf0
+
+========
+OBJECTS
+========
+
+Background
+#092406 #1c8c0f #39d128
+22222
+21222
+21212
+20212
+22222
+
+Target
+#1B1B1B #24120b
+.....
+.111.
+10001
+.1001
+.111.
+
+Wall
+#1f0d05 #401c0d #3d2e09
+02101
+20112
+01200
+21020
+10220
+
+Playerleft
+#000000 #F5F5F5 #241107 #63380d #63200d
+3..3.
+121..
+020..
+.3...
+4.4..
+
+Playerright
+#000000 #F5F5F5 #241107 #63380d #63200d
+.3..3
+..121
+..020
+...3.
+..4.4
+
+Crate
+#e0eddf #a1a6a1 #676b67
+..00.
+.100.
+00020
+00010
+01000
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = Playerright
+* = Crate
+@ = Crate and Target
+O = Target
+
+Player = Playerright or Playerleft
+
+=======
+SOUNDS
+=======
+
+Player MOVE 26509907
+Crate MOVE 25847738
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Target
+Player, Wall, Crate
+
+======
+RULES
+======
+
+[ left Playerright] -> [ left Playerleft]
+[ right Playerleft] -> [ right Playerright]
+[ > Player | Crate ] -> [ > Player | > Crate ]
+
+==============
+WINCONDITIONS
+==============
+
+all Target on Crate
+
+=======
+LEVELS
+=======
+
+message level 1 of 5
+message drag the sugar into the holes
+######
+#..###
+#.*###
+#.p.o#
+##.*o#
+######
+
+message level 2 of 5
+#######
+####..#
+#.o#*.#
+#o..o.#
+#..**.#
+#..P.##
+#######
+
+message level 3 of 5
+message let's see if you can with a more complicated puzzle
+#########
+#o..##o##
+#o.*#p..#
+#.....*.#
+#..*...##
+####*..##
+####.o###
+#########
+
+message level 4 of 5
+############
+######..####
+####o*..####
+#..o...*####
+#.####..####
+#.*...p.####
+#.*.o..o..##
+##.#......##
+##...##o.###
+##*.o###*###
+##.......###
+############
+
+message final level
+message it's time to put all your skills into practice
+###################
+######..###########
+##o###.*###########
+##.#o#..###########
+##.......o.########
+##...###...########
+###.#####.#########
+#...#####.#########
+#.*.*....p.....####
+##..#####....*...##
+##..#####.##o#.#*##
+##.*#####.##.#..*.#
+##..#o..o..#.#o*..#
+#########...*.....#
+#########..#*.#####
+####o....oo#..#####
+###################
